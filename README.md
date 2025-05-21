@@ -1,12 +1,10 @@
-
-```markdown
 # Stock Trading Client
 
 A Spring Boot gRPC client application for interacting with a stock trading service.
 
 ## Overview
 
-This project implements a client application that communicates with a stock trading service using gRPC protocol. It allows for operations such as placing orders, streaming updates, and bulk order processing.
+This project implements a client application that communicates with a stock trading service using the gRPC protocol. It allows operations such as placing orders, streaming updates, and processing bulk orders.
 
 ## Technologies Used
 
@@ -47,7 +45,7 @@ grpc:
       negotiationType: plaintext
 ```
 
-Replace `localhost:9090` with the actual address of your gRPC server.
+> Replace `localhost:9090` with the actual address of your gRPC server.
 
 ## Features
 
@@ -57,18 +55,21 @@ Replace `localhost:9090` with the actual address of your gRPC server.
 
 ## Running the Application
 
-Start the application:
+1. Select function call in the command line runner
 
-```bash
-mvn spring-boot:run
-```
+2. Start the application with the following command:
+
+    ```bash
+    mvn spring-boot:run
+    ```
+
+
 
 ## Usage Examples
 
 The client provides various service methods for interacting with the stock trading server:
+
 - Place orders
 - Get order status
 - Process bulk orders from JSON files
-- Stream real-time updates
-
-```
+- Stream real-time updates  
